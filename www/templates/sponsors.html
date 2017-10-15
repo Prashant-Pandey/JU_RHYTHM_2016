@@ -1,0 +1,14 @@
+<ion-view title="Sponsors">
+    <ion-content class="sponsor-img" overflow-scroll="true" padding="true" scroll="true" class="has-header">
+        <div class="row" style="display: block">
+            <div class="col item-image"><img src="http://jecrcuniversity.eu5.org/images/logo.png"></div>
+        </div>
+        <div class="row light-black-bg box-shadow-big" style="margin-bottom:5px;padding-top: 20px" ng-repeat="sponsor in sponsors">
+            <div class="col col-50">
+                <div class="item-image parent-thumbnail-size"><img ng-src="{{sponsor.image}}" class="thumbnail-size">
+                </div>
+            </div>
+            <div class="col col-50 col-center"><p class=" padding-left light">{{sponsor.sponsor_name}}</p></div>
+        </div>
+    </ion-content>
+</ion-view>

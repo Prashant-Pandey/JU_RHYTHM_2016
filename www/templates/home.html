@@ -1,0 +1,117 @@
+<ion-view title="JU-RHYTHM">
+    <ion-content class="home-background"  ng-class="{'bar-subheader-slide-away': slideHeader}" overflow-scroll="true" padding="false" class="has-header">
+        <ion-list class="no-padding">
+            <ion-item class="no-padding">
+                <ion-slide-box class="slide-box" does-continue="true" auto-play="true" slide-interval=2000>
+                    <ion-slide><img
+                            src="http://jecrcuniversity.eu5.org/images/ccb2c1_8b22fde4990e46bcb95fcc67da5c10f5.jpg"
+                            class="carousel-img"></ion-slide>
+                    <ion-slide><img
+                            src="http://jecrcuniversity.eu5.org/images/ccb2c1_346fda466a7d44c791dbcc2f16834b87.jpg"
+                            class="carousel-img"></ion-slide>
+                    <ion-slide><img
+                            src="http://jecrcuniversity.eu5.org/images/ccb2c1_d08432a5166d4f07910fb12c3ee33c92.jpg"
+                            class="carousel-img"></ion-slide>
+                </ion-slide-box>
+            </ion-item>
+            <ion-item class="no-padding">
+                <div class="row row-no-padding margin-bottom-4px">
+                    <div class="per-50 gradient-silver">
+                        <div class="text-center border-right fact-div"><span
+                                class="font-weight900 gold-color font-large">9000+</span>
+
+                            <H2 class="fact-text">FOOTFALL</H2></div>
+                    </div>
+                    <div class="col per-50 gradient-silver">
+                        <div class="text-center fact-div"><span class="font-weight900 gold-color font-large">50+</span>
+
+                            <H2 class="fact-text">SPONSORS</H2></div>
+                    </div>
+                </div>
+                <div class="row row-no-padding">
+                    <div class="per-50 gradient-silver">
+                        <div class="text-center border-right fact-div"><span
+                                class="font-weight900 gold-color font-large">40+</span>
+
+                            <H2 class="fact-text">EVENTS</H2></div>
+                    </div>
+                    <div class="col per-50 gradient-silver">
+                        <div class="text-center fact-div"><span
+                                class="font-weight900 gold-color font-large">2000+</span>
+
+                            <H2 class="fact-text">PARTICIPANTS</H2></div>
+                    </div>
+                </div>
+            </ion-item>
+            <ion-item class="item text-center item-text-wrap transparent-background">
+                <h2 class="font-large text-shadow-black">PRIZES WORTH RUPEES </h2>
+                <p class="font-large text-shadow-animation">1.25 MILLION</p></ion-item>
+            <ion-item class="no-padding">
+                <div class="button-bar"><a class="button button-culture category-button light"
+                                           ui-sref="welcome.eventFilter({main_cat: 'cultural'})">Cultural</a> <a
+                        class="button button-technical button-background-position category-button light"
+                        ui-sref="welcome.eventFilter({main_cat: 'technical'})">Technical</a></div>
+                <div class="button-bar"><a class="button button-icon button-business category-button light"
+                                           ui-sref="welcome.eventFilter({main_cat: 'business'})">E-Summit</a></div>
+            </ion-item>
+            <ion-item class="card no-padding rounded">
+                <div class="item item-divider light-black-bg"><h3 class="about-heading light">About US</h3></div>
+                <div class="item item-text-wrap light justify-text" ui-sref="welcome.aboutJU-Rhythm "><p>JECRC
+                    University proudly announces its 4th in-line Techno-Cultural Fest “JU Rhythm’ 16” which will be held
+                    during 10th – 12th March 2016.</p>
+
+                    <p> Continuing the 15-year legacy JECRC Foundation holds, JECRC University reigns as an
+                        innovation-driven institution renowned for being incessant at research. JU is the place to be
+                        and peculiarly when the “Rhythm” is in the air, there is only one catch – BE THERE!!! </p></div>
+            </ion-item>
+            <ion-item class="no-padding">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/J6hxl1bD2J8" frameborder="0" width="854"
+                            height="480"></iframe>
+                </div>
+            </ion-item>
+            <ion-item class="no-padding rounded" style="margin:10px;">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14248.044061755432!2d75.87669!3d26.7759188!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x43fbca7105eca800!2sJECRC+University!5e0!3m2!1sen!2sin!4v1455414222647"
+                            width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </ion-item>
+            <ion-item class="no-padding footer-background">
+                <div class="row">
+                    <div class="col col-50">
+                        <div class="row border-bottom border-top"><h3 class="light heading-stay">Stay Tuned :</h3></div>
+                    </div>
+                    <div class="col col-50">
+                        <div class="button-bar"><a class="button button-clear icon ion-social-facebook"
+                                                   href="https://www.facebook.com/JURhythm/?ref=br_rs"
+                                                   onclick="window.open('https://www.facebook.com/JURhythm/?ref=br_rs','_blank','location=yes');return false;"></a>
+                            <a class="button button-clear icon ion-social-instagram"></a> <a
+                                    class="button button-clear icon ion-social-youtube"
+                                    href="https://www.youtube.com/user/jecrcuvideo"
+                                    onclick="window.open('https://www.youtube.com/user/jecrcuvideo','_blank','location=yes');return false;"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row padding-bottom">
+                    <div class="col col-50"><h2 class="light heading-media">Media Partners</h2></div>
+                </div>
+                <div class="row">
+                    <div class="col-20" ng-repeat="list in sponsors_list"><img ng-src="{{list.image}}"
+                                                                               class="partner-carousel"></div>
+                </div>
+                <div class="row">
+                    <div class="col center item-text-wrap">
+                        <img src="http://jecrcuniversity.eu5.org/images/jecrc_logo.png" class="center-ju"/>
+
+                        <p class="text-center">© 2016 JECRC UNIVERSITY</p>
+
+                        <p class="justify-text">Plot No. IS-2036 to 2039, Sitapura Industrial Area Extn, Ramchandrapura,
+                            Near Mahatma Gandhi Hospital, Vidhani Village, Jaipur, Rajasthan 303905</p>
+
+                        <div class="padding"></div>
+                    </div>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
